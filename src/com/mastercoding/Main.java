@@ -16,6 +16,7 @@ public class Main {
         // you can use anything we learned: if-else-then, switch, int counter
         // thing you can not do is System.out.print("*   *   *  **");
         // you need to generate the patterns
+        // I don't know why this is not pushing
 
         int maxrows     = 14;
         int maxColoumns = 14;
