@@ -18,8 +18,17 @@ public class Main {
         // you need to generate the patterns
         // I don't know why this is not pushing
 
-        int maxrows     = 14;
-        int maxColoumns = 14;
+        // Copy code below and un-comment it
+
+        // https://youtu.be/zHeALVxsdkw
+
+        /*
+
+        System.out.println("Name: ");
+        System.out.println("Status: ");
+        System.out.println();
+        int maxrows     = 15;
+        int maxColoumns = 15;
 
         for(int rows = 0; rows < maxrows; rows++){
             for(int column = 0; column < maxColoumns; column++){
@@ -29,6 +38,176 @@ public class Main {
             }
             System.out.println();
         }
+
+        */
+
+//        System.out.println("Name: ");
+//        System.out.println("Status: ");
+//        System.out.println();
+/*
+
+        int maxrows     = 2;
+        int maxColoumns = 2;
+
+        for(int rows = 0; rows < maxrows; rows++){
+            for(int column = 0; column < maxColoumns; column++){
+                // put your logic here
+                // remember to use print and not println
+                if (rows == 0){
+                    System.out.print("*");
+                }
+                if (rows == 1 && column == 1){
+                    System.out.print("*");
+                }
+
+            }
+            System.out.println();
+        }
+*/
+/*
+
+        int maxrows     = 3;
+        int maxColoumns = 3;
+
+        for(int rows = 0; rows < maxrows; rows++){
+            for(int column = 0; column < maxColoumns; column++){
+                // put your logic here
+                // remember to use print and not println
+                if((rows == 0 || rows == 2) && column == 1){
+                    System.out.print("*");
+                }
+                if((rows == 0 || rows == 2 ) && (column == 0 || column == 2)){
+                    System.out.print(" ");
+                }
+
+                if(rows == 1 && (column == 0 || column == 2)){
+                    System.out.print("*");
+                }
+                if(rows == 1 && column == 1){
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.println();
+        }
+*/
+
+
+
+
+
+/*
+
+        int maxrows     = 5;
+        int maxColoumns = 5;
+
+        for(int rows = 0; rows < maxrows; rows++){
+            for(int column = 0; column < maxColoumns; column++){
+                // put your logic here
+                // remember to use print and not println
+                if (rows == 0 || rows == 4){
+                    System.out.print("*");
+                }
+                if ((rows == 1 || rows == 3) && (column == 0 || column == 4)){
+                    System.out.print("*");
+                }
+                if((rows == 1 || rows == 3) && (column >= 1 && column <= 3)){
+                    System.out.print(" ");
+                }
+                if (rows == 2 && (column == 0 || column == 2 || column == 4)){
+                    System.out.print("*");
+                }
+                if(rows == 2 && (column == 1 || column == 3)){
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.println();
+        }
+*/
+
+
+
+        System.out.println("Name: ");
+        System.out.println("Status: ");
+        System.out.println();
+        int maxrows     = 11;
+        int maxColoumns = 10;
+
+        boolean print = false;
+
+        for(int rows = 0; rows < maxrows; rows++){
+            for(int column = 0; column < maxColoumns; column++){
+                // put your logic here
+                // remember to use print and not println
+
+                if (rows == 0 || rows == 4){
+                    if(column >= 1 && column <= 3){
+                        print = true;
+                    }
+                }
+
+                if (rows == 1 || rows == 3){
+                    if (column == 0 || column == 4){
+                        print = true;
+                    }
+                }
+
+                if (rows == 2){
+                    if (column == 0 || column == 2 || column == 4){
+                        print = true;
+                    }
+                }
+
+                if (rows == 5){
+                    if (column == 2){
+                        print = true;
+                    }
+                }
+
+                if (rows == 6){
+                    if (column == 2 || (column >= 6 && column <= 8)){
+                        print = true;
+                    }
+                }
+
+                if (rows == 7){
+                    if(column == 2 || column == 5 || column == 9){
+                        print = true;
+                    }
+                }
+
+                if (rows == 8){
+                    if ((column >= 2 && column <= 5) || column == 7 || column == 9 ){
+                        print = true;
+                    }
+                }
+
+                if (rows == 9){
+                    if (column == 5 || column == 9){
+                        print = true;
+                    }
+                }
+
+                if (rows == 10){
+                    if (column >= 6 && column <= 8){
+                        print = true;
+                    }
+                }
+
+                if (print){
+                    System.out.print("*");
+                    print = false;
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+
+
+
+
 
 
     }
